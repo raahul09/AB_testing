@@ -1,0 +1,222 @@
+body.teamcroco-test.modal-loaded {
+    overflow: hidden !important;
+}
+
+.teamcroco-test .hide,
+.teamcroco-test .password-strength {
+    display: none !important;
+}
+
+.teamcroco-test input::-webkit-input-placeholder {
+    color: #333;
+}
+
+.teamcroco-test input::-moz-placeholder {
+    color: #333;
+}
+
+.teamcroco-test input:-ms-input-placeholder {
+    color: #333;
+}
+
+.teamcroco-test input:-moz-placeholder {
+    color: #333;
+}
+
+.teamcroco-test .valid input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px #C1DCBD inset !important;
+    -webkit-transition: background-color 5000s ease-in-out 0s !important;
+    transition: background-color 5000s ease-in-out 0s !important;
+    -webkit-text-fill-color: #333 !important
+}
+
+.teamcroco-test .invalid input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px #F1D9D9 inset !important;
+    -webkit-transition: background-color 5000s ease-in-out 0s !important;
+    transition: background-color 5000s ease-in-out 0s !important;
+    -webkit-text-fill-color: #333 !important
+}
+
+.teamcroco-test #signupForm .controls {
+    position: relative;
+}
+
+.teamcroco-test #signupForm input {
+    padding: 0 40px 0 10px;
+    color: #333;
+}
+
+.teamcroco-test #signupForm .valid input {
+    background-color: #C1DCBD;
+}
+
+.teamcroco-test #signupForm .invalid input {
+    background-color: #F1D9D9;
+}
+
+.teamcroco-test #signupForm .controls .mark {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.teamcroco-test #signupForm .controls .mark i {
+    font-size: 20px;
+}
+
+.teamcroco-test #signupForm .controls .mark i.fa-check-circle {
+    color: #077802;
+}
+
+.teamcroco-test #signupForm .controls .mark i.fa-times-circle {
+    color: #A30102;
+}
+
+.teamcroco-test #signupForm .controls .errormsg {
+    text-align: left;
+    color: #A30102;
+    margin-top: 2px;
+    position: absolute;
+    bottom: -18px;
+    width: 100%;
+}
+
+.teamcroco-test #signupForm .password-checker-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    list-style: none;
+    margin: 10px 0 10px 25px;
+}
+
+.teamcroco-test #signupForm .password-checker-list li {
+    margin: 0;
+    text-align: left;
+    padding: 0 10px 0 0;
+    font-size: 12px;
+    width: 47%;
+    color: #A30102;
+}
+
+.teamcroco-test #signupForm .password-checker-list li::before {
+    content: "\2022";
+    color: #3197D6;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+@media(max-width:767.98px) {
+    .teamcroco-test #signupForm .two-col+.two-col {
+        margin-top: 20px;
+    }
+}
+
+@media(max-width:425.98px) {
+    .teamcroco-test #signupForm .password-checker-list li {
+        width: 100%;
+    }
+}
+
+/*popup*/
+.teamcroco-test .overlay {
+    background-color: #000;
+    opacity: 0.25;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    display: none;
+}
+
+.teamcroco-test .popup-outer {
+    max-width: 991px;
+    width: 100%;
+    height: 100%;
+    max-height: calc(90vh - 90px);
+    background: #FFFFFF;
+    border-radius: 12px;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    padding: 50px 40px;
+    overflow: auto;
+    display: none;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.teamcroco-test.modal-loaded .overlay,
+.teamcroco-test.modal-loaded .popup-outer {
+    display: block;
+}
+
+.teamcroco-test .popup-inner {
+    margin: 0 auto;
+    height: 100%;
+}
+
+.teamcroco-test .close {
+    width: 32px;
+    height: 32px;
+    background: rgba(229, 229, 229, 0.5);
+    border-radius: 8px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-left: auto;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+}
+
+.teamcroco-test .close:hover {
+    background: #ffffff;
+    border: 1px solid rgba(229, 229, 229, 0.5);
+}
+
+.teamcroco-test .close img {
+    max-width: 10px;
+    width: 100%;
+}
+
+@media(max-width: 1024.98px) {
+    .teamcroco-test .popup-outer {
+        max-width: calc(100% - 50px);
+        max-height: calc(100% - 35px);
+    }
+}
+
+@media(max-width: 767.98px) {
+    .teamcroco-test .popup-outer {
+        height: 100%;
+        padding: 50px 15px;
+    }
+}
+
+@media(min-width: 1920.98px) {
+    .popup-outer {
+        max-width: 50%;
+    }
+}
